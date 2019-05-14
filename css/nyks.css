@@ -4,34 +4,26 @@
 }
 
 body {
-    /*font-family: copperplate, sans-serif;*/
     font-family: sans-serif;
     margin: 0;
     z-index: 10;
     color: #545454;
+    background-color: whitesmoke;
 }
 
 h1 {
     font-family: 'nyks', sans-serif;
-    font-size: 8vw;
-}
-
-@media only screen and (min-width: 75em) {
-    h1 {
-        font-size: 6em;
-    }
+    font-size: 7vw;
+    margin-bottom: 1.4em;
 }
 
 h2 {
+    font-family: 'nyks', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    font-size: 6vw;
-}
-
-@media only screen and (min-width: 75em) {
-    h2 {
-        font-size: 4em;
-    }
+    font-size: 9vw;
+    margin-bottom: 3vw;
+    color: white;
 }
 
 .h2-img {
@@ -39,12 +31,82 @@ h2 {
     width: 100%;
 }
 
-header {
+h3 {
+    font-family: 'nyks', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+    margin: 0 0 0.7em 0;
+    padding-top: 1em;
     position: relative;
 }
 
+h3::after {
+    content: '';
+    display: block;
+    background-image: url(../img/fioriture.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 25px;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+h4 {
+    margin: 2em 0 0 0;
+}
+
+header, .title-c, .title-d, .title-e, .title-f {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-image: url('../img/NYKS_01.jpg');
+}
+
+.title-c {
+    background-image: url('../img/NYKS_11.jpg');
+}
+
+.title-d {
+    background-image: url('../img/NYKS_38.jpg');
+}
+
+.title-e {
+    background-image: url('../img/NYKS_30.jpg');
+}
+
+.title-f {
+    background-image: url('../img/NYKS_58.jpg');
+}
+
+.title-c::before, .title-c::after, .title-e::before, .title-e::after  {
+    content: '';
+    height: 5em;
+    display: block;
+}
+
+
+.language {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1em;
+}
+
 main {
-    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.intro, .menu, .map {
+    /*max-width: 1024px;*/
     margin: 0 auto;
 }
 
@@ -52,53 +114,44 @@ main {
     width: 100%;
     height: auto;
     z-index: -1;
-    /*position: fixed;*/
+    /* position: fixed; */
 }
 
 .intro {
-    /*margin-top: 4vw;*/
+    margin-top: 1.5em;
 }
 
-.txt {
-    text-align: left;
-    padding-top: 50px;
+.a-manger .txt {
+    font-style: italic;
+    color: white;
+    margin-top: 1.5em;
 }
 
-.nav {
-    float: left;
+.a-manger p {
+    margin-top: 0;
 }
 
-.nav > a {
-    display: block;
+.section-header {
+    position: relative;
 }
 
-.nav a:link {
-    color: #545454;
-    text-decoration: none;
+.section-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.nav a:visited {
-    color: #545454;
-    text-decoration: none;
+.menu {
+    margin: 0 auto;
+    border-left: 6px solid #454545;
+    border-right: 6px solid #454545;
 }
 
-.nav a:hover {
-    color: #545454;
-    text-decoration: none;
-}
-
-.nav a:active {
-    color: #545454;
-    text-decoration: none;
-}
-
-.nav .item {
-    font-size: 13px;
-    background: url(/img/nav-bkg.png) no-repeat;
-    width: 130px;
-    height: 99px;
-    margin: 20px;
-    line-height: 99px;
+.menu-inner {
+    max-width: 968px;
+    margin: 0 auto;
+    padding: 0 5vw 10vw 5vw;
 }
 
 .img-logo {
@@ -111,15 +164,53 @@ main {
 }
 
 .logo-chien {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 40%;
+    position: relative;
+    margin: 0 auto;
+    max-width: 500px;
+    top: 15%;
+    width: 55%;
+}
+
+.location {
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    font-weight: 100;
+    position: relative;
+    top: 20%;
+}
+
+.phone-number {
+    text-align: center;
+    font-size: 5vw;
+    position: relative;
+    top: 21%;
+}
+
+.phone-number a:link {
+    color: white;
+    text-decoration: none;
+
+}
+
+.phone-number a:visited {
+    color: white;
+    text-decoration: none;
+
+}
+
+.phone-number a:hover {
+    color: white;
+    text-decoration: none;
+
+}
+
+.phone-number a:active {
+    color: white;
+    text-decoration: none;
 }
 
 section:not(.img-full) {
-    margin: 0 30px;
     padding: 2vw;
     text-align: center;
 }
@@ -145,35 +236,422 @@ td:first-child {
 }
 
 #map {
-    width: 500px;
-    /*width: 100%;*/
-    height: 400px;
+    width: 100%;
+    height: 500px;
 }
 
-.map {
-    margin-top: 5vw;
-}
-
-p, tr td {
+p, tr td, .location, .phone-number, th, h4, .day-menu {
     font-family: 'Economica', sans-serif;
 }
 
-.location {
+th {
+    font-size: 0.8em;
+}
+
+td {
+    vertical-align: top;
+    padding-top: 20px;
+}
+
+tr > td:first-child {
+    padding-right: 10px;
+}
+
+tr > td:first-child::first-letter {
+    text-transform: capitalize;
+}
+
+tr > td:last-child {
+    font-size: 0.8em;
+    line-height: 1em;
+    padding-top: 25px;
+}
+
+@media (min-width: 768px) {
+    tr > td:last-child {
+        font-size: 20px;
+    }
+}
+
+td.extra {
+    font-style: italic;
+}
+
+.close td {
+    padding-top: 10px;
+}
+
+.close td:last-child {
+    padding-top: 15px;
+}
+
+.sub {
+    text-align: center;
+}
+
+.night-item {
+    font-style: normal;
+}
+
+.menu.beers table tr th:first-child, .menu.beers table tr td:first-child {
+    width: 72%
+}
+
+.menu.beers table tr th:not(:first-child), .menu.beers table tr td:not(:first-child) {
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 1em;
+    padding-top: 25px;
+    width: 14%;
+}
+
+.menu.wine table tr td:last-child {
+    width: 10%;
+}
+
+.menu-descr {
+    font-style: italic;
+}
+
+td.subitem:first-child::first-letter {
+    text-transform: none;
+}
+
+td.subitem {
+    font-style: italic;
+}
+
+
+
+.contact {
+    margin: 1em 0 1em 0;
+}
+
+.contact p, .heures p {
+    font-family: 'nyks', sans-serif;
+    font-size: 4.5vw;
     color: white;
 }
 
-.phone-number a:link {
+.contact div {
+    /*margin-top: 10px;*/
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.food-title {
+    position: relative;
+}
+
+.food-title:hover::after {
+    background-image: url(../img/dingding.png);
+}
+
+.beers-title {
+    margin-bottom: 0.5em;
+}
+
+.beers-title::after {
+    content: '';
+    display: block;
+    background: url(../img/hops2.png) no-repeat;
+    width: 81vw;
+    height: 10vw;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.wines-title {
+    margin-bottom: 0.5em;
+}
+
+.wines-title::after {
+    content: '';
+    display: block;
+    background: url(../img/wineopener.png) no-repeat;
+    width: 12vw;
+    height: 13vw;
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.cf {
+    position: relative;
+    width: 71px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.cf img {
+    position: absolute;
+    left: 0;
+    /*-webkit-transition: opacity 0.2s ease-in-out;*/
+    /*-moz-transition: opacity 0.2s ease-in-out;*/
+    /*-o-transition: opacity 0.2s ease-in-out;*/
+    /*transition: opacity 0.2s ease-in-out;*/
+    width: 71px;
+    height: 50px;
+}
+
+@keyframes cf3FadeInOut {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes cf3FadeInOut2 {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes cf3FadeInOut3 {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.cf img.bell1 {
+    animation-name: cf3FadeInOut1;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+.cf img.bell2 {
+    animation-name: cf3FadeInOut2;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+.cf img.bell3 {
+    animation-name: cf3FadeInOut3;
+    animation-timing-function: step-end;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+.day-menu {
     color: white;
 }
 
-.phone-number a:visited {
-    color: white;
+#menu-du-jour, #daily-menu {
+    display: none;
 }
 
-.phone-number a:hover {
-    color: white;
+.daily-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #3f3c3d;
+    overflow-y: scroll;
+    background-image: url(../img/board.jpg)
 }
 
-.phone-number a:active {
-    color: white;
+.daily-menu img {
+    width: 100%;
+}
+
+#close-menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: whitesmoke;
+    width: 20px;
+}
+
+.open-sign img {
+    width: 30vw;
+}
+
+/*.fb::before {*/
+/*content: '';*/
+/*display: inline-block;*/
+/*width: 50px;*/
+/*height: 50px;*/
+/*background-image: url(../img/facebook2.png);*/
+/*}*/
+
+/******************************* MEDIA *********************************/
+
+@media (orientation: landscape) {
+    .logo-chien {
+        width: 30%;
+    }
+
+    .location {
+        font-size: 3vw;
+    }
+
+    .phone-number {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 768px) {
+
+    h1 {
+        font-size: 6em;
+    }
+
+    h2 {
+        font-size: 70px;
+    }
+
+    .beers-title::after {
+        width: 672px;
+        height: 84px;
+    }
+
+    .wines-title::after {
+        width: 91px;
+        height: 102px;
+    }
+
+    h3 {
+        font-size: 60px;
+    }
+
+    h3::after {
+        content: '';
+        display: block;
+        background-image: url(../img/fioriture.png);
+        background-repeat: no-repeat;
+        width: 138px;
+        height: 27px;
+        background-position: center;
+        background-size: contain;
+        margin: 0 auto;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    td {
+        font-size: 20px;
+    }
+
+    .menu.beers table tr th:not(:first-child), .menu.beers table tr td:not(:first-child) {
+        font-size: 20px;
+    }
+
+    #close-menu {
+        right: 20px;
+        top: 20px;
+        width: 45px;
+    }
+
+    .open-sign img {
+        width: 300px;
+    }
+
+    .contact p, .heures p {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .location {
+        margin-top: 1em;
+        font-size: 5vw;
+    }
+
+    .phone-number {
+        font-size: 4vw;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1120px) {
+    .logo-chien {
+        width: 336px;
+    }
+
+    .location {
+        font-size: 56px;
+    }
+
+    .phone-number {
+        font-size: 56px;
+    }
+}
+
+/* iPhone, iPad */
+@media all and (max-device-width: 480px) {
+    header, .title-b, .title-c, .title-d, .title-e, .title-f {
+        background-attachment: scroll;
+    }
+}
+
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+    header, .title-b, .title-c, .title-d, .title-e, .title-f {
+        background-attachment: scroll;
+    }
+}
+
+@media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+    header, .title-b, .title-c, .title-d, .title-e, .title-f {
+        background-attachment: scroll;
+    }
 }

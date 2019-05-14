@@ -1,0 +1,17 @@
+{
+  "name": "nyks",
+  "version": "1.0.0",
+  "description": "Nyks' website",
+  "main": "index.html",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}
