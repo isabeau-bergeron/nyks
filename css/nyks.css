@@ -529,6 +529,10 @@ a:active {
 /*background-image: url(../img/facebook2.png);*/
 /*}*/
 
+.descr-small {
+  font-size: smaller;
+}
+
 /******************************* MEDIA *********************************/
 
 @media (orientation: landscape) {
