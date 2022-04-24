@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'nyks', sans-serif;
     margin: 0;
     z-index: 10;
     color: #545454;
@@ -154,6 +154,10 @@ main {
     padding: 0 5vw 10vw 5vw;
 }
 
+.menu-inner p {
+    font-family: 'Economica', sans-serif;
+}
+
 .img-logo {
     width: 100%;
     margin-top: 20px;
@@ -244,7 +248,7 @@ td:first-child {
 }
 
 p, tr td, .location, .phone-number, th, h4, .day-menu {
-    font-family: 'Economica', sans-serif;
+    font-family: 'nyks', 'Economica', sans-serif;
 }
 
 th {
@@ -328,16 +332,6 @@ td.subitem {
 
 .contact {
     margin: 1em 0 1em 0;
-}
-
-.contact p, .heures p {
-    font-family: 'nyks', sans-serif;
-    font-size: 4.5vw;
-    color: white;
-}
-
-.contact div {
-    /*margin-top: 10px;*/
 }
 
 a:link {
@@ -520,17 +514,9 @@ a:active {
     width: 20px;
 }
 
-.open-sign img {
-    width: 30vw;
+.open-sign {
+    width: 8em;
 }
-
-/*.fb::before {*/
-/*content: '';*/
-/*display: inline-block;*/
-/*width: 50px;*/
-/*height: 50px;*/
-/*background-image: url(../img/facebook2.png);*/
-/*}*/
 
 .descr-small {
   font-size: smaller;
@@ -539,10 +525,6 @@ a:active {
 /******************************* MEDIA *********************************/
 
 @media (orientation: landscape) {
-    /* .logo-chien { */
-        /* width: 80%; */
-    /* } */
-
     .location {
         font-size: 3vw;
     }
@@ -613,10 +595,6 @@ a:active {
     .open-sign img {
         width: 300px;
     }
-
-    .contact p, .heures p {
-        font-size: 2em;
-    }
 }
 
 @media (min-width: 768px) and (orientation: landscape) {
@@ -661,4 +639,26 @@ a:active {
     header, .title-b, .title-c, .title-d, .title-e, .title-f {
         background-attachment: scroll;
     }
+}
+
+.link-row {
+  display: flex;
+  justify-content: left;
+  gap: 1em;
+  align-items: center;
+  margin-left: 35%;
+  margin-bottom: 1em;
+}
+
+.link-icon {
+  width: 8em;
+  justify-content: center;
+}
+
+.link-text {
+  color: white;
+}
+
+.link-text p {
+  font-size: 2em;
 }
