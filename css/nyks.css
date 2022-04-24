@@ -661,4 +661,5 @@ a:active {
 
 .link-text p {
   font-size: 2em;
+  text-align: left;
 }
