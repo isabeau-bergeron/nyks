@@ -646,7 +646,7 @@ a:active {
   justify-content: left;
   gap: 1em;
   align-items: center;
-  margin-left: 35%;
+  /* margin-left: 10%; */
   margin-bottom: 1em;
 }
 
@@ -660,6 +660,30 @@ a:active {
 }
 
 .link-text p {
-  font-size: 2em;
   text-align: left;
+  font-size: 1.5em;
+}
+
+@media all and (min-width: 680px) {
+  .link-text p {
+    font-size: 2em;
+  }
+}
+
+@media all and (min-width: 720px) {
+  .link-row {
+    margin-left: 10%;
+  }
+}
+
+@media all and (min-width: 920px) {
+  .link-row {
+    margin-left: 20%;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .link-row {
+    margin-left: 35%;
+  }
 }
