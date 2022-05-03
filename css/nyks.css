@@ -11,53 +11,7 @@ body {
     background-color: whitesmoke;
 }
 
-h1 {
-    font-family: 'nyks', sans-serif;
-    font-size: 7vw;
-    margin-bottom: 1.4em;
-}
-
-h2 {
-    font-family: 'nyks', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 9vw;
-    margin-bottom: 3vw;
-    color: white;
-}
-
-.h2-img {
-    padding-bottom: 3em;
-    width: 100%;
-}
-
-h3 {
-    font-family: 'nyks', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 32px;
-    margin: 0 0 0.7em 0;
-    padding-top: 1em;
-    position: relative;
-}
-
-h3::after {
-    content: '';
-    display: block;
-    background-image: url(../img/fioriture.png);
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 25px;
-    background-position: center;
-    background-size: contain;
-    margin: 0 auto;
-}
-
-h4 {
-    margin: 2em 0 0 0;
-}
-
-header, .title-c, .title-d, .title-e, .title-f {
+header, .title-f {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -71,81 +25,23 @@ header {
     background-image: url('../img/NYKS_01.jpg');
 }
 
-.title-c {
-    background-image: url('../img/NYKS_11.jpg');
-}
-
-.title-d {
-    background-image: url('../img/NYKS_38.jpg');
-}
-
-.title-e {
-    background-image: url('../img/NYKS_30.jpg');
-}
-
 .title-f {
     background-image: url('../img/NYKS_58.jpg');
 }
-
-.title-c::before, .title-c::after, .title-e::before, .title-e::after  {
-    content: '';
-    height: 5em;
-    display: block;
-}
-
 
 .language {
     position: absolute;
     right: .5em;
     top: .3em;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 main {
     margin: 0 auto;
 }
 
-.intro, .menu, .map {
-    /*max-width: 1024px;*/
-    margin: 0 auto;
-}
-
-.img-hero {
-    width: 100%;
-    height: auto;
-    z-index: -1;
-    /* position: fixed; */
-}
-
 .intro {
     margin-top: 1.5em;
-}
-
-.a-manger .txt {
-    font-style: italic;
-    color: white;
-    margin-top: 1.5em;
-}
-
-.a-manger p {
-    margin-top: 0;
-}
-
-.section-header {
-    position: relative;
-}
-
-.section-inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.menu {
-    margin: 0 auto;
-    border-left: 6px solid #454545;
-    border-right: 6px solid #454545;
 }
 
 .menu-inner {
@@ -158,11 +54,6 @@ main {
     font-family: 'Economica', sans-serif;
 }
 
-.img-logo {
-    width: 100%;
-    margin-top: 20px;
-}
-
 .img-chien {
     max-height: 100vh;
     max-width: 100vw;
@@ -172,166 +63,14 @@ main {
   justify-content: center;
   align-items: center;
   display: flex;
-    /* position: relative; */
-    /* margin: 0 auto; */
-    /* top: 10%; */
-    /* width: 80%; */
 }
 
-.location {
-    color: white;
-    font-size: 5vw;
-    text-align: center;
-    font-weight: 100;
-    position: relative;
-    top: 20%;
-}
-
-.phone-number {
-    text-align: center;
-    font-size: 5vw;
-    position: relative;
-    top: 21%;
-}
-
-.phone-number a:link {
-    color: white;
-    text-decoration: none;
-
-}
-
-.phone-number a:visited {
-    color: white;
-    text-decoration: none;
-
-}
-
-.phone-number a:hover {
-    color: white;
-    text-decoration: none;
-
-}
-
-.phone-number a:active {
-    color: white;
-    text-decoration: none;
-}
-
-section:not(.img-full) {
-    padding: 2vw;
+section {
     text-align: center;
 }
 
-section.img-full {
-    margin: 0;
-}
-
-.img-table {
-    width: 100%;
-}
-
-table {
-    width: 100%;
-}
-
-table td, table th {
-    text-align: right;
-}
-
-td:first-child {
-    text-align: left;
-}
-
-#map {
-    width: 100%;
-    height: 500px;
-}
-
-p, tr td, .location, .phone-number, th, h4, .day-menu {
+p {
     font-family: 'nyks', 'Economica', sans-serif;
-}
-
-th {
-    font-size: 0.8em;
-}
-
-td {
-    vertical-align: top;
-    padding-top: 20px;
-}
-
-tr > td:first-child {
-    padding-right: 10px;
-}
-
-tr > td:first-child::first-letter {
-    text-transform: capitalize;
-}
-
-tr > td:last-child {
-    font-size: 0.8em;
-    line-height: 1em;
-    padding-top: 25px;
-}
-
-@media (min-width: 768px) {
-    tr > td:last-child {
-        font-size: 20px;
-    }
-}
-
-td.extra {
-    font-style: italic;
-}
-
-.close td {
-    padding-top: 10px;
-}
-
-.close td:last-child {
-    padding-top: 15px;
-}
-
-.sub {
-    text-align: center;
-}
-
-.night-item {
-    font-style: normal;
-}
-
-.menu.beers table tr th:first-child, .menu.beers table tr td:first-child {
-    width: 72%
-}
-
-.menu.beers table tr th:not(:first-child), .menu.beers table tr td:not(:first-child) {
-    text-align: center;
-    font-size: 0.8em;
-    line-height: 1em;
-    padding-top: 25px;
-    width: 14%;
-}
-
-.menu.wine table tr td:last-child {
-    width: 10%;
-}
-
-.menu-descr {
-    font-style: italic;
-}
-
-td.subitem:first-child::first-letter {
-    text-transform: none;
-}
-
-td.subitem {
-    font-style: italic;
-}
-
-
-
-.contact {
-    margin: 1em 0 1em 0;
 }
 
 a:link {
@@ -354,42 +93,6 @@ a:active {
     text-decoration: none;
 }
 
-.food-title {
-    position: relative;
-}
-
-.food-title:hover::after {
-    background-image: url(../img/dingding.png);
-}
-
-.beers-title {
-    margin-bottom: 0.5em;
-}
-
-.beers-title::after {
-    content: '';
-    display: block;
-    background: url(../img/hops2.png) no-repeat;
-    width: 81vw;
-    height: 10vw;
-    background-size: contain;
-    margin: 0 auto;
-}
-
-.wines-title {
-    margin-bottom: 0.5em;
-}
-
-.wines-title::after {
-    content: '';
-    display: block;
-    background: url(../img/wineopener.png) no-repeat;
-    width: 12vw;
-    height: 13vw;
-    background-size: contain;
-    margin: 0 auto;
-}
-
 .cf {
     position: relative;
     width: 71px;
@@ -400,10 +103,6 @@ a:active {
 .cf img {
     position: absolute;
     left: 0;
-    /*-webkit-transition: opacity 0.2s ease-in-out;*/
-    /*-moz-transition: opacity 0.2s ease-in-out;*/
-    /*-o-transition: opacity 0.2s ease-in-out;*/
-    /*transition: opacity 0.2s ease-in-out;*/
     width: 71px;
     height: 50px;
 }
@@ -483,56 +182,7 @@ a:active {
     animation-duration: 1s;
 }
 
-.day-menu {
-    color: white;
-}
-
-#menu-du-jour, #daily-menu {
-    display: none;
-}
-
-.daily-menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #3f3c3d;
-    overflow-y: scroll;
-    background-image: url(../img/board.jpg)
-}
-
-.daily-menu img {
-    width: 100%;
-}
-
-#close-menu {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    color: whitesmoke;
-    width: 20px;
-}
-
-.open-sign {
-    width: 8em;
-}
-
-.descr-small {
-  font-size: smaller;
-}
-
 /******************************* MEDIA *********************************/
-
-@media (orientation: landscape) {
-    .location {
-        font-size: 3vw;
-    }
-
-    .phone-number {
-        font-size: 3vw;
-    }
-}
 
 @media (min-width: 768px) {
 
@@ -540,103 +190,26 @@ a:active {
         font-size: 6em;
     }
 
-    h2 {
-        font-size: 70px;
-    }
-
-    .beers-title::after {
-        width: 672px;
-        height: 84px;
-    }
-
-    .wines-title::after {
-        width: 91px;
-        height: 102px;
-    }
-
-    h3 {
-        font-size: 60px;
-    }
-
-    h3::after {
-        content: '';
-        display: block;
-        background-image: url(../img/fioriture.png);
-        background-repeat: no-repeat;
-        width: 138px;
-        height: 27px;
-        background-position: center;
-        background-size: contain;
-        margin: 0 auto;
-    }
-
-    h4 {
-        font-size: 24px;
-    }
-
     p {
         font-size: 22px;
-    }
-
-    td {
-        font-size: 20px;
-    }
-
-    .menu.beers table tr th:not(:first-child), .menu.beers table tr td:not(:first-child) {
-        font-size: 20px;
-    }
-
-    #close-menu {
-        right: 20px;
-        top: 20px;
-        width: 45px;
-    }
-
-    .open-sign img {
-        width: 300px;
-    }
-}
-
-@media (min-width: 768px) and (orientation: landscape) {
-    .location {
-        margin-top: 1em;
-        font-size: 5vw;
-    }
-
-    .phone-number {
-        font-size: 4vw;
-    }
-}
-
-@media (orientation: landscape) and (min-width: 1120px) {
-    .logo-chien {
-        /* max-width: 900px; */
-    }
-
-    .location {
-        font-size: 56px;
-    }
-
-    .phone-number {
-        font-size: 56px;
     }
 }
 
 /* iPhone, iPad */
 @media all and (max-device-width: 480px) {
-    header, .title-b, .title-c, .title-d, .title-e, .title-f {
+    header, .title-f {
         background-attachment: scroll;
     }
 }
 
 @media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
-    header, .title-b, .title-c, .title-d, .title-e, .title-f {
+    header, .title-f {
         background-attachment: scroll;
     }
 }
 
 @media all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
-    header, .title-b, .title-c, .title-d, .title-e, .title-f {
+    header, .title-f {
         background-attachment: scroll;
     }
 }
@@ -646,16 +219,14 @@ a:active {
   justify-content: left;
   gap: 1em;
   align-items: center;
-  /* margin-left: 10%; */
-  margin-bottom: 1em;
 }
 
 .link-icon {
-  width: 8em;
-  justify-content: center;
+  width: 7em;
 }
 
 .link-text {
+    max-width: 64vw;
   color: white;
 }
 
@@ -664,26 +235,48 @@ a:active {
   font-size: 1.5em;
 }
 
+.open-sign {
+  width: 8em;
+}
+
+.open-sign img {
+  width: 300px;
+}
+
+@media all and (min-width: 500px) {
+  .link-text {
+    max-width: 60vw;
+  }
+}
+
 @media all and (min-width: 680px) {
   .link-text p {
     font-size: 2em;
   }
+
+  .language {
+    font-size: 2em;
+  }
+
 }
 
 @media all and (min-width: 720px) {
   .link-row {
     margin-left: 10%;
+    margin-bottom: 1em;
   }
 }
 
 @media all and (min-width: 920px) {
   .link-row {
     margin-left: 20%;
+    margin-bottom: 1em;
   }
 }
 
 @media all and (min-width: 1024px) {
   .link-row {
     margin-left: 35%;
+    margin-bottom: 1em;
   }
 }
